@@ -1,0 +1,34 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Name:</strong>
+  <%= @taxi.name %>
+</p>
+
+<p>
+  <strong>Services:</strong>
+  <%= @taxi.services %>
+</p>
+
+<p>
+  <strong>Status:</strong>
+  <%= @taxi.status %>
+</p>
+
+<p>
+  <strong>Rate:</strong>
+  <%= @taxi.rate %>
+</p>
+
+<p>
+  <strong>Sumkms:</strong>
+  <%= @taxi.sumkms %>
+</p>
+
+<p>
+  <strong>Working:</strong>
+  <%= @taxi.working %>
+</p>
+
+<%= link_to 'Edit', edit_taxi_path(@taxi) %> |
+<%= link_to 'Back', taxis_path %>

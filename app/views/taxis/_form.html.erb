@@ -1,0 +1,47 @@
+<%= form_with(model: taxi, local: true) do |form| %>
+  <% if taxi.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(taxi.errors.count, "error") %> prohibited this taxi from being saved:</h2>
+
+      <ul>
+      <% taxi.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= form.label :name %>
+    <%= form.text_field :name, id: :taxi_name %>
+  </div>
+
+  <div class="field">
+    <%= form.label :services %>
+    <%= form.number_field :services, id: :taxi_services %>
+  </div>
+
+  <div class="field">
+    <%= form.label :status %>
+    <%= form.check_box :status, id: :taxi_status %>
+  </div>
+
+  <div class="field">
+    <%= form.label :rate %>
+    <%= form.number_field :rate, id: :taxi_rate %>
+  </div>
+
+  <div class="field">
+    <%= form.label :sumkms %>
+    <%= form.number_field :sumkms, id: :taxi_sumkms %>
+  </div>
+
+  <div class="field">
+    <%= form.label :working %>
+    <%= form.check_box :working, id: :taxi_working %>
+  </div>
+
+  <div class="actions">
+    <%= form.submit %>
+  </div>
+<% end %>

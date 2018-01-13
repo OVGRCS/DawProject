@@ -1,0 +1,17 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  name: MyString
+  services: 1
+  status: false
+  rate: 1
+  sumkms: 1
+  working: false
+
+two:
+  name: MyString
+  services: 1
+  status: false
+  rate: 1
+  sumkms: 1
+  working: false
