@@ -1,44 +1,64 @@
-<h2>Sign up</h2>
+<div class="row register-form">
+    <div class="col-md-8 col-md-offset-2">
+  <div class="form-group">
+      <div class="col-md-offset-3 col-sm-6 col-sm-offset-3 input-column">
+      <h2>Sign up</h2>
+    </div>
+  </div>
 
 <%= form_for(resource, as: resource_name, url: registration_path(resource_name)) do |f| %>
   <%= devise_error_messages! %>
 
-  <div class="field">
-    <%= f.label :email %><br />
-    <%= f.email_field :email, autofocus: true, autocomplete: "email" %>
+  <div class="form-group">
+      <div class="col-md-offset-3 col-sm-6 col-sm-offset-3 input-column">
+        <p class=label-form><%= f.label :email %></p>
+        <%= f.email_field :email, autofocus: true, autocomplete: "email" %>
+      </div>
   </div>
-
-  <div class="field">
-    <%= f.label :name %><br />
+  <div class="form-group">
+      <div class="col-md-offset-3 col-sm-6 col-sm-offset-3 input-column">
+    <%= f.label :name %>
     <%= f.text_field :name, autofocus: true, autocomplete: "name" %>
   </div>
+</div>
 
-  <div class="field">
-    <%= f.label :address %><br />
+ <div class="form-group">
+      <div class="col-md-offset-3 col-sm-6 col-sm-offset-3 input-column">
+    <%= f.label :address %>
     <%= f.text_field :address, autofocus: true, autocomplete: "address" %>
   </div>
+</div>
 
-  <div class="field">
-    <%= f.label :phone %><br />
+  <div class="form-group">
+      <div class="col-md-offset-3 col-sm-6 col-sm-offset-3 input-column">
+    <%= f.label :phone %>
     <%= f.text_field :phone, autofocus: true, autocomplete: "phone" %>
   </div>
+</div>
 
-  <div class="field">
+  <div class="form-group">
+      <div class="col-md-offset-3 col-sm-6 col-sm-offset-3 input-column">
     <%= f.label :password %>
     <% if @minimum_password_length %>
     <em>(<%= @minimum_password_length %> characters minimum)</em>
-    <% end %><br />
+    <% end %>
     <%= f.password_field :password, autocomplete: "off" %>
   </div>
+</div>
 
-  <div class="field">
-    <%= f.label :password_confirmation %><br />
+  <div class="form-group">
+      <div class="col-md-offset-3 col-sm-6 col-sm-offset-3 input-column">
+    <%= f.label :password_confirmation %>
     <%= f.password_field :password_confirmation, autocomplete: "off" %>
   </div>
+</div>
 
-  <div class="actions">
+  <div class="form-group">
+      <div class="col-md-offset-3 col-sm-6 col-sm-offset-3 input-column">
     <%= f.submit "Sign up" %>
   </div>
+</div>
 <% end %>
-
+</div>
+</div>
 <%= render "devise/shared/links" %>

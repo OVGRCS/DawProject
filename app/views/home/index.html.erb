@@ -2,56 +2,28 @@
 <html>
 
 <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Landing Page</title>
-    <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
-    <link rel="stylesheet" href="assets/fonts/font-awesome.min.css">
-    <link rel="stylesheet" href="assets/css/user.css">
-    <link rel="stylesheet" href="assets/css/Google-Style-Login.css">
-    <script type="text/javascript" src="assets\js\jquery.min.js"></script>
-    <script type="text/javascript" src="assets\js\jquery.js"></script>
+   
 </head>
 
-<body>
-    <nav class="navbar navbar-default">
-        <div class="container">
-            <div class="navbar-header"><a class="navbar-brand navbar-link" href="#"><i class="glyphicon glyphicon-phone"></i>Tappxi</a>
-                <button class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navcol-1"><span class="sr-only">Toggle navigation</span><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></button>
-            </div>
-            <div class="collapse navbar-collapse" id="navcol-1">
-                <ul class="nav navbar-nav navbar-right">
-                    <li class="active" role="presentation"><a href="#">Home </a></li>
-                    <li role="presentation"><a href="#">Quienes somos</a></li>
-                    <li role="presentation"><a href="#">Mapa </a></li>
-                    <li role="presentation">
-                        <a href="#">
-                        	<% if current_user %>
-                            <button class="btn btn-info btn-xs" type="button" id="UserButton"><%= current_user.email %> </button>
-                            <%= link_to " <button class= btn btn-primary btn-block btn-info> Cerrar Sesión</button>".html_safe, destroy_user_session_path, :method => :delete %> 
-                            <% end %>
-                        </a>
-                    </li>
-                </ul>
-            </div>
-        </div>
-    </nav>
-    <div class="jumbotron hero">
+<body class="hero">
+    
+    <div class="jumbotron">
         <div class="container">
             <div class="row">
-                <div class="col-md-4 col-md-push-7 phone-preview">
-                    <div class="iphone-mockup"></div>
+                <div class="col-md-6  get-it">
+                    <h1>La movilidad que necesitas</h1>
+                
+                </div>
+                <div class="col-md-4 col-md-push-1 phone-preview">
                     <div class="login-card" id="LogDiv">
-                    	<%= link_to " <button class= btn btn-primary btn-block btn-info> Registrate</button>".html_safe, new_user_registration_path %> 
+                    	<%= link_to " <button class= btn btn-primary btn-block btn-info btn-reg> Registrate</button>".html_safe, new_user_registration_path %> 
                     	<%= link_to " <button class= btn btn-primary btn-block btn-warning> Entrar</button>".html_safe, new_user_session_path %> 
         
                     </div>
-                <div class="col-md-6 col-md-pull-3 get-it">
-                    <h1>La movilidad que necesitas</h1>
-                    <p> </p>
-                </div>
+                
             </div>
         </div>
+    </div>
     </div>
     <section class="testimonials"></section>
     <footer class="site-footer">

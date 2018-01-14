@@ -3,6 +3,13 @@ p{
   text-shadow:2px 2px 3px rgb(151, 151, 151);
   margin-bottom:40px;
 }
+.login-card{
+  margin-top: 20px;
+}
+
+.phone-preview{
+  margin-top: 100px;
+}
 
 .navbar{
   margin-bottom:0;
@@ -13,12 +20,38 @@ p{
   margin-right:6px;
 }
 
+.jumbotron{
+  background-color: rgba(8, 0, 0, 0.4);
+  padding-bottom: 200px;
+  border: none;
+}
+.btn-reg{
+  background-color: blue;
+}
+
+.register-form{
+  margin-left: 0px;
+  margin-right: -150px; 
+  background-color: rgba(8, 0, 0, 0.4);
+  max-width: 100%
+}
+.form-group{
+  margin-left: 60px;
+}
+
+.label-form{
+  font-weight: bold;
+}
+
 .hero{
-  background:url(../../assets/img/city_bg.jpg) no-repeat center;
+  background: url(https://images3.alphacoders.com/269/269589.jpg) no-repeat center;
   background-size:cover;
   border:none;
 }
-
+.navmenu{
+  margin-right: 20px;
+  margin-top: 15px;
+}
 @media (min-width:992px) {
   .hero .get-it{
     text-align:right;

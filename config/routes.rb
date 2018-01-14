@@ -4,7 +4,6 @@ Rails.application.routes.draw do
   resources :taxis
   devise_for :users
   get 'home/index'
-  get 'adminpage/index'
 
   root 'home#index'
 
